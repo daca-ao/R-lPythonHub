@@ -1,0 +1,1 @@
+C:\Shared\python\python.exe C:\Selenium\status_server\reset_ui_test_env.py

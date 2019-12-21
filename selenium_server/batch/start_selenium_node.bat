@@ -1,0 +1,1 @@
+C:\Selenium\openjdk-1.8.0.191\bin\java -Dwebdriver.ie.driver=c:/Selenium/drivers/IEDriverServer.exe -Dwebdriver.chrome.driver=c:/Selenium/drivers/chromedriver.exe -Dwebdriver.gecko.driver=c:/Selenium/drivers/geckodriver.exe -jar C:\Selenium\lib\selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:8443/grid/register

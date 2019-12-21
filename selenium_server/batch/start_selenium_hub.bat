@@ -1,0 +1,1 @@
+C:\Selenium\openjdk-1.8.0.191\bin\java -jar C:\Selenium\lib\selenium-server-standalone-3.141.59.jar -port 8443 -role hub
