@@ -4,6 +4,8 @@ import copy
 import datetime
 import openpyxl
 
+title = [u"序号", u"自选号码", u"号段时间"]
+
 def handleStr(string):
     return string.strip().replace(',','').replace('.','').replace(' ','').replace('\n','').replace('\t','')
 
@@ -24,7 +26,6 @@ def isThreeSame(string):
 if __name__ == "__main__":
     w_excel = openpyxl.Workbook()
     w_sheet = w_excel.active
-    title = [u"序号", u"自选号码", u"号段时间"]
     for i in range(len(title)):
         w_sheet.cell(row = 1, column = i + 1, value = title[i])
     excel_row_index = 2
@@ -55,6 +56,6 @@ if __name__ == "__main__":
                 w_sheet.cell(row = excel_row_index, column = 3, value = output_time)
                 excel_row_index += 1
 
-    xlsname = "zixuan.xlsx"
+    xlsname = "自选结果.xlsx"
     w_excel.save(xlsname)
     print(u"生成文件 %s" % xlsname)
